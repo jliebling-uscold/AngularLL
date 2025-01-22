@@ -1,0 +1,11 @@
+.header {
+  background-color: #333;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  display: flexbox;
+  flex-direction: row;
+  button {
+    margin: 5px;
+  }
+}

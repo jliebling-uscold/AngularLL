@@ -1,0 +1,42 @@
+<div class="content">
+  <h3>Services</h3>
+  <ul>
+    <li>
+      A service is a class that provides a specific functionality or a set of
+      related functionalities that can be shared across different components or
+      modules in your application.
+    </li>
+    <li>
+      Services are typically used to interact with a server, a database, or
+      third part applications in general.
+    </li>
+    <br />
+    <li>
+      <u>In USCS-FE we split REST calls into a serperate Async services</u>
+    </li>
+    <br />
+    <li>
+      Services are also used to share data between different components. (ie:
+      Layer Pick Task screen and Advanced Window Selection)
+    </li>
+    <li>
+      Services are defined using the
+      <b
+        ><a href="https://angular.dev/api/core/Injectable"
+          >&#64;Injectable</a
+        ></b
+      >
+      decorator and can be injected into components or other services using the
+      Angular dependency injection system.
+      <pre class="code-block">
+        <code [innerHTML]="code"></code>
+      </pre>
+    </li>
+  </ul>
+  <button (click)="getLunchDataFromExpress()">Make a REST Call</button>
+  @for (lunch of lunchData; track lunch.food) {
+  <div class="">
+    <h4>{{ lunch.food }} | {{ lunch.score }} ⭐️</h4>
+  </div>
+  }
+</div>

@@ -1,0 +1,8 @@
+<div class="content">
+  <h3>Components</h3>
+  <p>Reusable ui parts that are combined to build user interfaces</p>
+  <button (click)="toggleSecondComponent()">{{ getToggleButtonText() }}</button>
+  @if (showSecondComponent) {
+  <app-second-component></app-second-component>
+  }
+</div>
