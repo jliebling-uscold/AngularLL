@@ -18,5 +18,20 @@
       Observables are a blueprint for creating streams and plumbing them
       together with operators to create observable chains.
     </li>
+    <li>
+      A Pipeable Operator is essentially a pure function which takes one
+      Observable as input and generates another Observable as output.
+      Subscribing to the output Observable will also subscribe to the input
+      Observable.
+    </li>
+    <li>
+      Some of the most common operators are
+      <a href="https://rxjs.dev/api/operators/map">map</a>,
+      <a href="https://rxjs.dev/api/operators/filter">filter</a>,
+      <a href="https://rxjs.dev/api/operators/tap">tap</a>, and
+    </li>
   </ul>
+  <pre class="code-block">
+    <code [innerHTML]="snippet"></code>
+  </pre>
 </div>

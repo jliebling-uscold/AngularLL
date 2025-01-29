@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-second-component',
@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './second-component.component.html',
   styleUrl: './second-component.component.scss',
 })
-export class SecondComponentComponent {}
+export class SecondComponentComponent {
+  inputValue = input<string>();
+}

@@ -1,0 +1,21 @@
+<div class="content">
+  <h2>Components and Inputs</h2>
+  <p>
+    When you use a component, you commonly want to pass some data to it. A
+    component specifies the data that it accepts by declaring inputs:
+  </p>
+  <pre class="code-block">
+    <code [innerHTML]="snippet"></code>
+  </pre>
+  <pre class="code-block">
+    <code [innerHTML]="snippet0"></code>
+  </pre>
+  <h4>For example:</h4>
+  <input
+    type="text"
+    id="exampleInput"
+    [(ngModel)]="inputExample"
+    placeholder="Enter input"
+  />
+  <app-second-component [inputValue]="inputExample"></app-second-component>
+</div>

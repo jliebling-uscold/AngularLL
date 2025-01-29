@@ -2,5 +2,25 @@
 body {
   margin: 0px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
 
+button {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.code-block {
+  background-color: rgb(232, 232, 232);
+  color: black;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  width: fit-content;
 }
