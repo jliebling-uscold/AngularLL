@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 })
 export class RxjsComponentComponent {
   snippet = `private getDropdownValues(): void {
-    this.dplService
-      .getDPLCusomters()
+    this.service
+      .getCusomters()
       .pipe(
         map((data: any[]) =>
           data.map((element) => ({
@@ -20,9 +20,9 @@ export class RxjsComponentComponent {
       )
       .subscribe((response) => {
         const customers = response;
-        this.searchForm.updateValues(DYNAMIC_PICK_LINE_MODELS.CUSTOMER, customers);
-        this.dynamicAssignmentForm.updateValues(DYNAMIC_PICK_LINE_MODELS.CUSTOMER, this.headerSvc.customers.value);
+        this.form1.updateValues(MODEL.CUSTOMER, customers);
+        this.form2.updateValues(MODEL.CUSTOMER, this.headerSvc.customers.value);
       });
-    this.dynamicAssignmentForm.updateValues(DYNAMIC_PICK_LINE_MODELS.PICKTYPE, PICK_TYPES);
+    this.form2.updateValues(MODEL.PICKTYPE, PICK_TYPES);
   }`;
 }

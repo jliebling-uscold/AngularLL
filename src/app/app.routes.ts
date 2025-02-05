@@ -5,6 +5,7 @@ import { ServiceComponentComponent } from './components/service-component/servic
 import { RxjsComponentComponent } from './components/rxjs-component/rxjs-component.component';
 import { HomeComponent } from './components/home/home.component';
 import { InputComponent } from './components/input/input.component';
+import { RouterComponent } from './components/router/router.component';
 
 export const routes: Routes = [
   { path: '**', redirectTo: 'HomeComponent' },
@@ -14,4 +15,5 @@ export const routes: Routes = [
   { path: 'service-component', component: ServiceComponentComponent },
   { path: 'rxjs-component', component: RxjsComponentComponent },
   { path: 'input-component', component: InputComponent },
+  { path: 'router-component', component: RouterComponent },
 ];
